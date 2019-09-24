@@ -7,7 +7,7 @@
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://figthin.github.io/favicon.ico?v=1569290401910">
+<link rel="shortcut icon" href="https://figthin.github.io/favicon.ico?v=1569290565590">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -247,17 +247,17 @@ docker对系统的内核版本最低要求是3.10+</p>
 <p>停止：</p>
 <pre><code> systemctl stop docker
 </code></pre>
-<ol start="5">
+</li>
 <li>
 <p>docker 检查版本</p>
-<p>docker -v</p>
+<pre><code> docker -v
+</code></pre>
 </li>
 <li>
 <p>使用docker安装tomcat<br>
 搜索</p>
-<p>docker search tomcat</p>
-</li>
-</ol>
+<pre><code> docker search tomcat
+</code></pre>
 <p>下载(拉取)镜像</p>
 <pre><code> docker pull tomcat
 </code></pre>
@@ -266,43 +266,53 @@ docker对系统的内核版本最低要求是3.10+</p>
  docker run --name tomcat2 -p8081:8080 -d tomcat
  docker run --name tomcat3 -p8082:8080 -d tomcat
 </code></pre>
-<ol start="7">
+</li>
 <li>
 <p>docker常用操作<br>
 查看正则运行的容器</p>
-<p>docker ps -a(查询全部，包含已经停止的)<br>
-停止正在运行的容器</p>
-<p>docker stop 容器id<br>
-启动容器</p>
-<p>docker start 容器id<br>
-重启容器</p>
-<p>docker restart 容器id<br>
-删除容器</p>
-<p>docker rm 容器id</p>
+<pre><code> docker ps -a(查询全部，包含已经停止的)
+</code></pre>
+<p>停止正在运行的容器</p>
+<pre><code> docker stop 容器id
+</code></pre>
+<p>启动容器</p>
+<pre><code> docker start 容器id
+</code></pre>
+<p>重启容器</p>
+<pre><code> docker restart 容器id
+</code></pre>
+<p>删除容器</p>
+<pre><code> docker rm 容器id
+</code></pre>
 </li>
 <li>
 <p>进入容器</p>
-<p>docker exec -it 容器id /bin/bash<br>
-在webapps下新建demo目录</p>
-<p>mkdir demo<br>
-在demo目录创建index.jsp</p>
-<p>touch index.jsp<br>
-修改index.jsp的内容</p>
-<p>echo '&lt;%=new java.util.Date()%&gt;' &gt;&gt; index.jsp<br>
-访问：http://ip:8080/demo</p>
+<pre><code> docker exec -it 容器id /bin/bash
+</code></pre>
+<p>在webapps下新建demo目录</p>
+<pre><code> mkdir demo
+</code></pre>
+<p>在demo目录创建index.jsp</p>
+<pre><code> touch index.jsp
+</code></pre>
+<p>修改index.jsp的内容</p>
+<pre><code> echo '&lt;%=new java.util.Date()%&gt;' &gt;&gt; index.jsp
+</code></pre>
+<p>访问：http://ip:8080/demo</p>
 </li>
 <li>
 <p>使用docker部署war文件</p>
-<p>docker cp xx.war 容器id:/usr/local/tomcat/webapps/</p>
+<pre><code> docker cp xx.war 容器id:/usr/local/tomcat/webapps/
+</code></pre>
 </li>
 <li>
 <p>使用docker安装Redis<br>
 搜索</p>
-<p>docker search redis<br>
-下载</p>
-<p>docker pull redis</p>
-</li>
-</ol>
+<pre><code>docker search redis
+</code></pre>
+<p>下载</p>
+<pre><code>docker pull redis
+</code></pre>
 </li>
 </ol>
 
@@ -328,7 +338,7 @@ docker对系统的内核版本最低要求是3.10+</p>
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://figthin.github.io/images/avatar.png?v=1569290401910" class="no-responsive avatar">
+    <img src="https://figthin.github.io/images/avatar.png?v=1569290565590" class="no-responsive avatar">
     <div class="text-muted">温故而知新</div>
     <div class="social-container">
       
@@ -372,7 +382,7 @@ docker对系统的内核版本最低要求是3.10+</p>
     </div>
     <div class="row">
       
-        <a href="https://figthin.github.io/tag/l_k7L9tFTY" class="badge secondary">
+        <a href="https://figthin.github.io/tag/l_k7L9tFTY" class="badge warning">
           Linux
         </a>
       
